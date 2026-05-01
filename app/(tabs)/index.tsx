@@ -1,34 +1,30 @@
 import SafeAreaWrapper from "@/components/safeAreaView";
 import "@/global.css";
 import { Link } from "expo-router";
-import { Text, View } from "react-native";
+import { Text } from "react-native";
 
 export default function App() {
   return (
     <SafeAreaWrapper>
-      <View className="flex-1 items-center justify-center bg-background">
-        <Text className="text-xl font-bold text-success">
-          Welcome to Nativewind!
-        </Text>
-        <Link
-          href={"/onboarding"}
-          className="mt-4 bg-primary rounded text-white p-4"
-        >
-          Go to Onboarding
-        </Link>
-        <Link
-          href={"/(auth)/sign-in"}
-          className="mt-4 bg-primary rounded text-white p-4"
-        >
-          Go to Sign In
-        </Link>
-        <Link
-          href={"/(auth)/sign-up"}
-          className="mt-4 bg-primary rounded text-white p-4"
-        >
-          Go to Sign Up
-        </Link>
-      </View>
+      <Text className="text-7xl font-sans-extrabold">Home</Text>
+      <Link
+        href={"/onboarding"}
+        className="mt-4 bg-primary rounded text-white p-4 font-sans-bold"
+      >
+        Go to Onboarding
+      </Link>
+      <Link
+        href={"/(auth)/sign-in"}
+        className="mt-4 bg-primary rounded text-white p-4 font-sans-bold"
+      >
+        Go to Sign In
+      </Link>
+      <Link
+        href={"/(auth)/sign-up"}
+        className="mt-4 bg-primary rounded text-white p-4 font-sans-bold"
+      >
+        Go to Sign Up
+      </Link>
     </SafeAreaWrapper>
   );
 }
