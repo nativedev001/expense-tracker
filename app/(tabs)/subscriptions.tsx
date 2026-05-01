@@ -1,10 +1,13 @@
+import SafeAreaWrapper from "@/components/safeAreaView";
 import { Text, View } from "react-native";
 
 const Subscriptions = () => {
   return (
-    <View>
-      <Text>Subscriptions</Text>
-    </View>
+    <SafeAreaWrapper>
+      <View>
+        <Text>Subscriptions</Text>
+      </View>
+    </SafeAreaWrapper>
   );
 };
 

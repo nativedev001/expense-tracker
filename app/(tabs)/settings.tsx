@@ -1,10 +1,13 @@
+import SafeAreaWrapper from "@/components/safeAreaView";
 import { Text, View } from "react-native";
 
 const Settings = () => {
   return (
-    <View>
-      <Text>Settings</Text>
-    </View>
+    <SafeAreaWrapper>
+      <View>
+        <Text>Settings</Text>
+      </View>
+    </SafeAreaWrapper>
   );
 };
 
